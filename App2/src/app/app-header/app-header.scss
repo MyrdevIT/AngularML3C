@@ -1,0 +1,66 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: lightgrey;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+
+}
+
+
+button {
+    padding: 18px 34px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+.primary {
+    background-color: #1b8170;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #0d5753;
+}
+
+
+.secondary {
+    background: none;
+    color: white;
+}
+
+.secondary:hover {
+    color: #1b8170;
+}

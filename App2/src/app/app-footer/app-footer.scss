@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    background-color: lightgrey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.footer-center {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #1b8170;
+}
+
+.footer-section p {
+    margin: 6px 0;
+    transition: color 0.25s ease;
+}
+
+.footer-section p:hover {
+    color: #1b8170;
+    cursor: pointer;
+}
