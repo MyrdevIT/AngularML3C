@@ -9,10 +9,10 @@
     flex-basis: 33.333%;
     overflow-y: auto;
 
-    transition: flex-basis 5s;
+    transition: flex-basis 8s;
     
         &:hover {
-            flex-basis: 200%; 
+            flex-basis: 300%; 
         }
     }
 }
