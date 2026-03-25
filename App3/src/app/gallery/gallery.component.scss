@@ -1,0 +1,19 @@
+.gallery {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    img {
+    height: 100vh;
+    flex-basis: 33.333%;
+    overflow-y: auto;
+
+    transition: flex-basis 5s;
+    
+        &:hover {
+            flex-basis: 200%; 
+        }
+    }
+}
+
