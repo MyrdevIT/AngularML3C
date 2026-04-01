@@ -1,19 +1,36 @@
 .gallery {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; 
+
+  .imgclass {
+    flex: 1;
+    transition: all 6s ease-in-out; // Skrócony czas (7s to wieczność dla użytkownika!)
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      flex: 30; // Powiększa proporcje elementu względem innych
+    }
 
     img {
-    height: 100vh;
-    flex-basis: 33.333%;
-    overflow-y: auto;
-
-    transition: flex-basis 8s;
-    
-        &:hover {
-            flex-basis: 300%; 
-        }
+      width: 100%;
+      height: 100%;
+    //   object-fit: cover; // Kluczowe dla zachowania proporcji zdjęcia
     }
-}
 
+    h1 {
+      font-family: "Edwardian Script ITC";
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: 0;
+      color: rgb(125, 255, 164);
+      pointer-events: none; // Napis nie przeszkadza w hoverze
+    }
+  }
+}
